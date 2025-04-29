@@ -15,6 +15,7 @@ App(
         "clock",
         "subghz_remote",
         "main_apps_on_start",
+        "hello_world",
     ],
 )
 

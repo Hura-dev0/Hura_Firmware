@@ -95,7 +95,7 @@ bool nfc_scene_mf_classic_detect_reader_on_event(void* context, SceneManagerEven
     if(event.type == SceneManagerEventTypeCustom) {
         if(event.event == NfcCustomEventWorkerUpdate) {
             furi_timer_stop(instance->timer);
-            notification_message(instance->notifications, &sequence_blink_start_cyan);
+            notification_message(instance->notifications, &sequence_blink_start_red);
 
             size_t nonces_pairs = 2 * mfkey32_logger_get_params_num(instance->mfkey32_logger);
             detect_reader_set_state(instance->detect_reader, DetectReaderStateReaderDetected);

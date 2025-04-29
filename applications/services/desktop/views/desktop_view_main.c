@@ -16,7 +16,7 @@ struct DesktopMainView {
     bool dummy_mode;
 };
 
-#define DESKTOP_MAIN_VIEW_POWEROFF_TIMEOUT 1300
+#define DESKTOP_MAIN_VIEW_POWEROFF_TIMEOUT 600
 
 static void desktop_main_poweroff_timer_callback(void* context) {
     DesktopMainView* main_view = context;
